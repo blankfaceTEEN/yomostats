@@ -1,0 +1,32 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">  
+    <meta name="description" content="YOMO - Stats">
+    <meta name="author" content="Iskander Khisamov">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <title>YOMO - Stats</title>
+</head>
+<body>
+    <main>
+        <div class="main-block">
+            {% for item in stats %}
+            <div class="player">
+                <span class="name" style="color: {{item.color}}">{{ item.name }}</span> - 
+                <span class="score" 
+                    {% if item.score >= 1 %} 
+                        style="color: #02bf78"
+                    {% else %} 
+                        style="color: #bc365c" 
+                    {% endif %}>
+                    {{ item.score }}
+                </span>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>

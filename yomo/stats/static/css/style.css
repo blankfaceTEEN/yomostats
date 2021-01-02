@@ -1,0 +1,95 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, main, div {
+    display: flex;
+    background-color: black;
+    color: #e2e2e8;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
+}
+
+span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.green {
+    color: #02bf78;
+}
+
+.red {
+    color: #bc365c;
+}
+
+.taiiiga .name {
+    color: #6a1b9a;
+}
+
+.ilyan .name {
+    color: #2e7d32;
+}
+
+.meon .name {
+    color: #ffea00;
+}
+
+.salik .name {
+    color: #ef6c00;
+}
+
+.archi .name {
+    color: #283593;
+}
+
+.player .name {
+    color: white;
+}
+
+.taiiiga {
+    display: inline;
+}
+
+.ilyan {
+    display: inline;
+}
+
+.meon {
+    display: inline;
+}
+
+.salik {
+    display: inline;
+}
+
+.archi {
+    display: inline;
+}
+
+.player {
+    display: inline;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+    div  {
+      font-size: 30px;
+    }
+}
